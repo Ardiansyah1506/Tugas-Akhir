@@ -563,3 +563,9 @@ section {
         font-size: 50%;
     }
 }
+
+@media (max-width:370px) {
+    .td1 {
+        font-size: 20%;
+    }
+}
