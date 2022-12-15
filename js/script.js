@@ -1,4 +1,5 @@
 let navbar = document.querySelector('.navbar');
+const toTop = document.querySelector(".to-top");
 
 document.querySelector('#menu-btn').onclick = () =>{
     navbar.classList.toggle('active');
@@ -27,3 +28,11 @@ window.onscroll = () =>{
     searchForm.classList.remove('active');
     cartItem.classList.remove('active');
 }
+
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 100) {
+        toTop.classList.add("active");
+    } else {
+        toTop.classList.remove("active");
+    }
+})
