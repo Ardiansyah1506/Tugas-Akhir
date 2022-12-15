@@ -474,25 +474,30 @@ section {
     background-color: var(--main-color);
 }
 
-.footer .links {
+.to-top {
+    background: white;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     display: flex;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    padding: 2rem 0;
-    gap: 1rem;
+    font-size: 32px;
+    color: #1f1f1f;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
 }
 
-.footer .links a {
-    padding: .7rem 2rem;
-    color: #fff;
-    border: var(--border);
-    font-size: 2rem;
+.to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
 }
-
-.footer .links a:hover {
-    background: var(--main-color);
-}
-
 .footer .credit {
     font-size: 2rem;
     color: #fff;
@@ -569,3 +574,4 @@ section {
         font-size: 20%;
     }
 }
+
